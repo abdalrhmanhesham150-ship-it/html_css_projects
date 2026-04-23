@@ -90,3 +90,29 @@ a:hover::after{
     transform: scale(1.5);
     opacity: 0;
 }
+.header-content h1{
+    animation-name: moveToLeft;
+    animation-duration: 0.65s;
+}
+@keyframes moveToLeft {
+    0% {
+        transform: translateX(-50px);
+
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+.header-content h4{
+    animation-name:moveToRight ;
+     animation-duration: 0.65s;
+}
+@keyframes moveToRight {
+    0% {
+        transform: translateX(50px);
+
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
