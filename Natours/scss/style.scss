@@ -140,6 +140,11 @@ a:hover::after{
 .grid-2{
     display: grid;
     grid-template-columns: auto auto;
+    .grid-2-content{
+
+        text-align: start;
+        padding:50px;
+    }
 }
 a{
     text-decoration: none;
@@ -151,4 +156,37 @@ a{
         background-color: greenyellow;
         color: white;
     }
+}
+.features{
+    margin-top: 100px;
+    padding:20rem 0;
+    background-image:linear-gradient(to right bottom, #7ed56f94,#28b48560),url(../img/nat-4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+    display: flex;
+ height: fit-content;
+ 
+    transform: skewY(-7deg);
+    .row{
+         display: flex;
+          transform: skewY(7deg);
+        gap:50px;
+        text-align: center;
+        margin: auto;
+        }
+  .row  div{
+        padding: 20px;
+        background-color: white;
+        max-width: 300px;
+        transition: all 1s;
+        &:hover{
+            transform: scale(1.2) translateY(-8px);
+
+        }
+       
+    }
+  
+}
+svg{
+    width: 50px;
 }
